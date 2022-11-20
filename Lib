@@ -2,8 +2,8 @@ local library = {
 		flags = { },
 		items = { }
 	}
-     _G.Color = Color3.fromRGB(255, 0, 0) 
-     _G.Color2 = Color3.fromRGB(255, 0, 0) 
+    if _G.Color == nil then _G.Color = Color3.fromRGB(80, 245, 245) end
+    if _G.Color2 == nil then _G.Color2 = Color3.fromRGB(0, 151, 156) end
     -- Services
 	local players = game:GetService("Players")
 	local uis = game:GetService("UserInputService")
@@ -109,7 +109,7 @@ local library = {
 		watermark.BlackOutline.Position = UDim2.fromOffset(-2, -2)
 		watermark.label = Instance.new("TextLabel", watermark.mainbar)
 		watermark.label.Name = "FPSLabel"
-		watermark.label.BackgroundColor3 = Color3.fromRGB( )
+		watermark.label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 		watermark.label.BackgroundTransparency = 1.000
 		watermark.label.Position = UDim2.new(0, 0, 0, 0)
 		watermark.label.Size = UDim2.new(0, 238, 0, 25)
